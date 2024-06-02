@@ -1,16 +1,50 @@
 /* src/components/Header/Header.css */
 
 .header {
-  position: fixed;
+  position: sticky;
   top: 0;
   height: 60px;
   width: 100%;
+  padding-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: black;
   transition: background-color 0.3s;
   z-index: 1000;
+  color: white;
+}
+
+.head {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: large;
+  font-family: "Roboto Mono", monospace;
+}
+
+.name-logo {
+  position: absolute;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  /* font-size: ; */
+  font-family: "Roboto Mono", monospace;
+}
+
+.name-logo img{
+  height: 150px;
+  color: white;
+  text-decoration: none;
 }
 
 nav ul {
@@ -37,9 +71,8 @@ nav ul li a {
   font-size: 20px;
 }
 
-nav ul:hover li a{
+nav ul:hover li a {
   color: #5c5c5c;
-
 }
 
 nav ul li a:hover {

@@ -1,7 +1,6 @@
-import { React, useRef, useEffect, useState} from "react";
+import React, { useRef, useEffect, useState } from "react";
 import "./Experience.css";
-import { CiCirclePlus } from "react-icons/ci";
-import { CiCircleMinus } from "react-icons/ci";
+import { CiCirclePlus, CiCircleMinus } from "react-icons/ci";
 import { IoLocation } from "react-icons/io5";
 import { MdOutlineArrowOutward } from "react-icons/md";
 
@@ -19,15 +18,15 @@ const Experience = ({
   const mainContentRef = useRef(null);
 
   const handleToggle = () => {
-    setIsOpen(!isOpen);
+    setIsOpen((prevIsOpen) => !prevIsOpen);
   };
 
   const handleClickOutside = (event) => {
     if (
       hiddenContentRef.current &&
       !hiddenContentRef.current.contains(event.target) &&
-        mainContentRef.current &&
-        !mainContentRef.current.contains(event.target)
+      mainContentRef.current &&
+      !mainContentRef.current.contains(event.target)
     ) {
       setIsOpen(false);
     }
@@ -35,7 +34,6 @@ const Experience = ({
 
   useEffect(() => {
     document.addEventListener("click", handleClickOutside, true);
-
     return () => {
       document.removeEventListener("click", handleClickOutside, true);
     };
@@ -43,8 +41,8 @@ const Experience = ({
 
   return (
     <div className="exp">
-      <div className="mainContent" onClick={handleToggle}> 
-        <div className="headline" >
+      <div className="mainContent" ref={mainContentRef} onClick={handleToggle}> 
+        <div className="headline">
           <span className="title">{tagLine}</span>
           <span className="date">{timeline}</span>
           {isOpen ? <CiCircleMinus /> : <CiCirclePlus />}

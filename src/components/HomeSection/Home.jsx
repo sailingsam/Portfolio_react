@@ -5,7 +5,7 @@ import "./Home.css";
 
 function Home() {
   return (
-    <div className="home-section">
+    <section className="home-section" id="home">
       <div className="name-area">
         <h1 class="name">Saksham Jain</h1>
         <Typing
@@ -14,7 +14,7 @@ function Home() {
           deletingSpeed={100}
         />
       </div>
-    </div>
+    </section>
   );
 }
 

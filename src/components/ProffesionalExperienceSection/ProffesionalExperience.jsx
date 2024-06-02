@@ -5,7 +5,7 @@ import ub from "./assets/ub.png";
 
 const ProffesionalExperience = () => {
   return (
-    <section className="proffesional-experience">
+    <section className="proffesional-experience" id="experience">
       <h1>Professional Experience</h1>
       <div className="experience-list">
         <Experience
