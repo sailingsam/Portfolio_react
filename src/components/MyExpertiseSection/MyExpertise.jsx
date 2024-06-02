@@ -14,19 +14,19 @@ const MyExpertise = () => {
           icon= {Coding} 
           title="Software" 
           highlight="Development" 
-          description="Experienced in both functional and OOP: Dart, Python, Java, JavaScript, TypeScript." 
+          description="Experienced in both functional and OOP: Java, Dart, JavaScript. Familiar with Python and C++. Also, have experience in developing RESTful APIs." 
         />
         <Expertise 
           icon={REACT} 
           title="Frontend Dev" 
           highlight="React, NextJS" 
-          description="Passionate about UI/UX. Over 5 years of development experience in HTML, CSS, JS, React, and NextJS frameworks." 
+          description="Passionate about UI/UX. Experience in HTML, CSS, JS, React, and Flutter frameworks." 
         />
         <Expertise 
           icon={FLUTTER}
           title="Flutter Dev" 
-          highlight="Android, iOS" 
-          description="Skilled in developing hybrid mobile apps and cross-platform solutions using the Flutter framework." 
+          highlight="Android, iOS, Web" 
+          description="Experience in developing cross-platform mobile applications and web Apps using Flutter. Familiar with Firebase and AppWrite. " 
         />
       </div>
     </section>
