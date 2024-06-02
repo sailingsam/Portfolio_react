@@ -1,7 +1,9 @@
-// src/components/MyExpertise/MyExpertise.jsx
 import React from 'react';
 import Expertise from './Expertise';
 import './MyExpertise.css';
+import Coding from './assets/coding.png';
+import REACT from './assets/react.png';
+import FLUTTER from './assets/flutter.png';
 
 const MyExpertise = () => {
   return (
@@ -9,23 +11,23 @@ const MyExpertise = () => {
       <h1>My Expertise</h1>
       <div className="expertise-list">
         <Expertise 
-          path="C:\Users\jsaks\OneDrive\Documents\Study\react devlopment class\portfolio-website\src\components\MyExpertiseSection\assets\coding.png" 
+          icon= {Coding} 
           title="Software" 
           highlight="Development" 
           description="Experienced in both functional and OOP: Dart, Python, Java, JavaScript, TypeScript." 
         />
-        {/* <Expertise 
-          icon="⚛️" 
+        <Expertise 
+          icon={REACT} 
           title="Frontend Dev" 
           highlight="React, NextJS" 
           description="Passionate about UI/UX. Over 5 years of development experience in HTML, CSS, JS, React, and NextJS frameworks." 
         />
         <Expertise 
-          icon="💻"
+          icon={FLUTTER}
           title="Flutter Dev" 
           highlight="Android, iOS" 
           description="Skilled in developing hybrid mobile apps and cross-platform solutions using the Flutter framework." 
-        /> */}
+        />
       </div>
     </section>
   );
