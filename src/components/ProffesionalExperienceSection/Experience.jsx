@@ -16,6 +16,7 @@ const Experience = ({
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const hiddenContentRef = useRef(null);
+  const mainContentRef = useRef(null);
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
@@ -24,7 +25,9 @@ const Experience = ({
   const handleClickOutside = (event) => {
     if (
       hiddenContentRef.current &&
-      !hiddenContentRef.current.contains(event.target)
+      !hiddenContentRef.current.contains(event.target) &&
+        mainContentRef.current &&
+        !mainContentRef.current.contains(event.target)
     ) {
       setIsOpen(false);
     }
