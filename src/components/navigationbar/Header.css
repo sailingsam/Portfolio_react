@@ -1,0 +1,47 @@
+/* src/components/Header/Header.css */
+
+.header {
+  position: fixed;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  transition: background-color 0.3s;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
+nav ul li {
+  display: flex;
+  margin: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s;
+  font-size: 20px;
+}
+
+nav ul:hover li a{
+  color: #5c5c5c;
+
+}
+
+nav ul li a:hover {
+  color: #ffffff;
+}

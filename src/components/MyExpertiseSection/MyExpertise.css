@@ -1,0 +1,23 @@
+/* src/components/MyExpertise/MyExpertise.css */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.my-expertise-section {
+    padding: 50px;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .my-expertise-section h1 {
+    text-align: center;
+    font-size: 100px;
+    margin-bottom: 30px;
+  }
+  
+  .expertise-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
