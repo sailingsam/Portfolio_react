@@ -2,7 +2,7 @@
 
 .home-section {
   height: 100vh;
-  background-image: url("C:\Users\jsaks\OneDrive\Documents\Study\react devlopment class\portfolio-website\src\assets\bg.png");
+  background-image: url("src\assets\bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
