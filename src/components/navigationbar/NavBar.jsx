@@ -14,11 +14,11 @@ const NavBar = () => {
             <span>{"// Expertise"}</span>
           </a>
         </li>
-        <li>
+        {/* <li>
           <a href="#work" className=".nav-item">
             <span>{"// Work"}</span>
           </a>
-        </li>
+        </li> */}
         <li>
           <a href="#experience" className=".nav-item">
             <span>{"// Experience"}</span>
